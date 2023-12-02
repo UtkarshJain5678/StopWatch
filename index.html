@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>
+        Skill Test 1: <u><i>Stop Watch</i></u>
+      </h2>
+    </header>
+    <main class="main-body">
+      <div class="inner-main">
+        <div id="circle-border">
+          <div id="circle">
+            <div class="timer">
+              <span id="min">00</span>:<span id="sec">00</span>
+            </div>
+          </div>
+        </div>
+        <div class="timer-btns">
+          <button id="start-btn" onclick="startTimer()">Start</button>
+          <button id="stop-btn" onclick="stopTimer()" disabled>Stop</button>
+          <button id="reset-btn" onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="index.js" />
+  </body>
+</html>
